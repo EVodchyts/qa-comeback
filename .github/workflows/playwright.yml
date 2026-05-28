@@ -4,8 +4,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:
   schedule:
-    - cron: '20 20 * * *'
+    - cron: '0 0 * * *'
       timezone: Europe/Kyiv
 jobs:
   test:
